@@ -1,22 +1,19 @@
 import React from "react";
+import Jumbotron from "./jumbotron";
+import Footer from "./footer";
 
 
 //create your first component
 const Home = () => {
+	let textofooter="Copyright &copy; Your Website 2019"
+	let textojumbotron="A Warm Welcome!"
+	let centrojumbotron="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat."
+	let finaljumbotron="Call to action!"
 	return (
-		<nav class="navbar navbar-expand-lg bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white bg-dark ms-3" href="#">Start Bootstrap</a>
-    <div class="collapse navbar-collapse position-absolute top-50 end-0 translate-middle-y me-3">
-      <a class="nav-link text-white bg-dark" href="#"><small>Home</small></a>
-      <a class="nav-link text-white bg-dark" href="#"><small>About</small></a>
-      <a class="nav-link text-white bg-dark" href="#"><small>Services</small></a>
-      <a class="nav-link text-white bg-dark"><small>Contact</small></a>
-    </div>
-  </div>
-</nav>
-
-
+		<>
+		<Jumbotron texto1={textojumbotron} texto2={centrojumbotron} texto3={finaljumbotron}/>
+		<Footer texto={textofooter}/>
+		</>	
 	);
 };
 
