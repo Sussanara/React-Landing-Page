@@ -1,4 +1,6 @@
-const jumbotron=() => {
+import React from "react";
+
+const Jumbotron=() => {
     return(
         <div class="container">
             <div class="jumbotron pt-1 pb-5">
@@ -7,5 +9,7 @@ const jumbotron=() => {
 	    	    <p class="lead"><a class="btn btn-primary btn-lg" href="#" role="button">Call to action!</a></p>
         	</div>
     	</div>
-    )
-}
+    );
+};
+
+export default Jumbotron;
