@@ -1,12 +1,12 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <footer>
-      <div class="container-fluid bg-dark py-4">
-        <p class=" text-white text-center fw-lighter" style="font-size:10px;">
+      <div className="container-fluid bg-dark py-4">
+        <p className=" text-white text-center fw-lighter fs-6">
           {" "}
-          Copyright C Your Website 2019
+          {props.texto}
         </p>
       </div>
     </footer>
