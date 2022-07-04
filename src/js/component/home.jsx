@@ -2,6 +2,8 @@ import React from "react";
 import Portfolio from "./Portfolio";
 import Navbar from "./Navbar";
 import Card from "./Card";
+import Jumbotron from "./jumbotron";
+import Footer from "./footer";
 
 //create your first component
 const Home = () => {
@@ -10,16 +12,19 @@ const Home = () => {
   let text3Navbar = "About"
   let text4Navbar = "Services"
   let text5Navbar = "Contact"
-
-  let text6Card = "Card title"
-  let text7Card = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua."
+	let textojumbotron="A Warm Welcome!"
+	let centrojumbotron="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat."
+	let finaljumbotron="Call to action!"
+  let textofooter="Copyright &copy; Your Website 2019"
   return (
     <>
 	<Navbar text1 ={text1Navbar} text2 ={text2Navbar} text3={text3Navbar} text4={text4Navbar} text5={text5Navbar} />
+  <Jumbotron texto1={textojumbotron} texto2={centrojumbotron} texto3={finaljumbotron}/>
   <Portfolio/>
-  <Card text6 = {text6Card} text7= {text7Card}/>
+  <Footer texto={textofooter}/>
     </>
   );
 };
+
 
 export default Home;
