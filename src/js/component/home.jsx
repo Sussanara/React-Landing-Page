@@ -1,7 +1,6 @@
 import React from "react";
 import Portfolio from "./Portfolio";
 import Navbar from "./Navbar";
-import Card from "./Card";
 import Jumbotron from "./jumbotron";
 import Footer from "./footer";
 
