@@ -3,7 +3,7 @@ import React from "react";
 const Jumbotron=(props) => {
     return(
         <div className="container">
-            <div className="jumbotron pt-1 pb-5">
+            <div className="jumbotron pt-6 pb-6">
     	        <h1 className="display-4">
 				{" "}
           		{props.texto1}
